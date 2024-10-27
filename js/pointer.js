@@ -5,6 +5,7 @@ export default function pointer() {
     document.addEventListener("mousemove", (e) => {
         dotPointer.style.left = `${e.clientX}px`;
         dotPointer.style.top = `${e.clientY}px`;
+        dotPointer.style.display = "block";
 
         largePointer.style.left = `${e.clientX}px`;
         largePointer.style.top = `${e.clientY}px`;
