@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --green: #95C11E;
+    --light-green: #B3E824;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    list-style: 1.88;
+    color: white;
+    overflow-x: hidden;
+}
+
+a {
+    cursor: pointer;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {    
+    background-color: var(--green);
+    border-radius: 50px;
+}
+
+::selection {
+    background-color: white;
+    color: var(--green);
+}
+
+
+/*------------------------------
+----------> Pointer <------------
+--------------------------------
+*/
+
+.pointer-dot {
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--green);
+    border-radius: 50%;
+    position: fixed;
+    transition: all ease-out 0.3s;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.pointer-large {
+    position: fixed;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+    background-color: var(--green);
+    filter: blur(120px);
+    transition: all ease-out 0.6s;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+
+/*------------------------------
+----------> Navbar <------------
+--------------------------------
+*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 8rem;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+nav .nav-menu-container{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    font-size: 1rem;
+}
+
+nav img {
+    margin-left: 6rem;
+}
+
+/********** NAV BUTTONS ********/
+nav .header-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 6rem;
+}
+
+nav .header-buttons a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0.8rem 2rem;
+    background-color: black;
+    border-radius: 5rem;
+    font-size: 1rem;
+    border: 0.2rem solid var(--green);
+    overflow: hidden;
+}
+
+.header-buttons a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 5rem;
+    text-align: center;
+    place-content: center;
+    transition:all linear .3s;
+}
+
+.header-buttons a:first-child:hover::before {
+    top: 0;
+    height: 100%;
+    content: "BOOK RANGE";
+    scale: 1.1;
+}
+
+.header-buttons a:last-child:hover::before {
+    top: 0;
+    height: 100%;
+    content: "BOOK GOLF";
+    scale: 1.1;
+}
+
+/*** VIDeo ***/
+.hero-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    
+}
+
+
+/*------------------------------
+----------> Hero Section <------------
+--------------------------------
+*/
+
+main {
+    background-color: rgba(0, 0, 0, 0.45);
+    /* position: relative; */
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    z-index: 10;
+}
+
+.hero h1 {
+    font-size: 8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.hero h1::before {
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    z-index: -1;
+    -webkit-text-stroke: 0.1rem var(--green);
+}
+
+.hero h4 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    width: 50%;
+}
