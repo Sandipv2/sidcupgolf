@@ -15,8 +15,8 @@ export default function animations() {
         scrollTrigger : {
             trigger: "main",
             scroller: "body",
-            start: "top -30%",
-            end: "top -70%",
+            start: "top -25%",
+            end: "top -40%",
             scrub: 1
         }
     })

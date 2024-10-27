@@ -230,5 +230,90 @@ main {
 
 .carousel {
     position: relative;
-    height: 100vh;
+    z-index: 40;
+    height: 40vh;
+    text-wrap: nowrap;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.carousel-in {
+    animation: scroll 30s linear infinite;
+}
+
+.carousel h1 {
+    display: inline-block;
+    font-size: 7.5rem;
+    margin-left: 1rem;
+    color: black;
+    font-weight: 900;
+    -webkit-text-stroke: 2px white;
+    font-family: Helvetica;
+    transition: all linear .3s;
+}
+
+.carousel h1:hover {
+    color: var(--green);
+    -webkit-text-stroke: 2px var(--green);
+
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/*------------------------------
+----------> About us <------------
+--------------------------------
+*/
+.about-us {
+    position: relative;
+    z-index: 40;
+}
+
+.about-us img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+.about-us .about-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.about-us .para-container {
+    padding: 0 4rem;
+    margin-top: 2rem;
+}
+
+.about-us .para-container p:nth-child(2) {
+    margin-top: 1.7rem;
+}
+
+.about-us p{
+    font-size: 1.25rem;
+    line-height: 2.3rem;
 }
