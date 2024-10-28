@@ -1,46 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 :root {
-    --green: #95C11E;
-    --light-green: #B3E824;
+  --green: #95c11e;
+  --light-green: #b3e824;
 }
 
 body {
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    list-style: 1.88;
-    color: white;
-    /* overflow-x: hidden; */
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  list-style: 1.88;
+  color: white;
+  /* overflow-x: hidden; */
 }
 
 a {
-    cursor: pointer;
-    color: white;
+  cursor: pointer;
+  color: white;
 }
 
 ::-webkit-scrollbar {
-    background-color: black;
-    width: 8px;
+  background-color: black;
+  width: 8px;
 }
 
-::-webkit-scrollbar-thumb {    
-    background-color: var(--green);
-    border-radius: 50px;
+::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 50px;
 }
 
 ::selection {
-    background-color: white;
-    color: var(--green);
+  background-color: white;
+  color: var(--green);
 }
-
 
 /*------------------------------
 ----------> Pointer <------------
@@ -48,32 +47,31 @@ a {
 */
 
 .pointer-dot {
-    width: 1.2rem;
-    height: 1.2rem;
-    background-color: var(--green);
-    border-radius: 50%;
-    position: fixed;
-    display: none;
-    transition: all ease-out 0.3s;
-    z-index: 50;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--green);
+  border-radius: 50%;
+  position: fixed;
+  display: none;
+  transition: all ease-out 0.3s;
+  z-index: 50;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .pointer-large {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 17rem;
-    height: 17rem;
-    border-radius: 50%;
-    background-color: var(--green);
-    filter: blur(120px);
-    transition: all ease-out 0.6s;
-    transform: translate(-50%, -50%);
-    z-index: 9;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  background-color: var(--green);
+  filter: blur(120px);
+  transition: all ease-out 0.6s;
+  transform: translate(-50%, -50%);
+  z-index: 9;
 }
-
 
 /*------------------------------
 ----------> Navbar <------------
@@ -81,93 +79,92 @@ a {
 */
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    height: 8rem;
-    top: 0;
-    left: 0;
-    z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 8rem;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
 
-nav .nav-menu-container{
-    display: flex;
-    align-items: center;
-    gap: 5rem;
+nav .nav-menu-container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  font-size: 1rem;
 }
 
 nav img {
-    margin-left: 6rem;
+  margin-left: 6rem;
 }
 
 /********** NAV BUTTONS ********/
 nav .header-buttons {
-    display: flex;
-    gap: 0.5rem;
-    margin-right: 6rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 6rem;
 }
 
-nav .header-buttons a{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    padding: 0.8rem 2rem;
-    background-color: black;
-    border-radius: 5rem;
-    font-size: 1rem;
-    border: 0.2rem solid var(--green);
-    overflow: hidden;
+nav .header-buttons a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0.8rem 2rem;
+  background-color: black;
+  border-radius: 5rem;
+  font-size: 1rem;
+  border: 0.2rem solid var(--green);
+  overflow: hidden;
 }
 
 .header-buttons a::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    bottom: 0;
-    height: 0%;
-    width: 100%;
-    background-color: var(--green);
-    border-radius: 5rem;
-    text-align: center;
-    place-content: center;
-    transition:all linear .3s;
+  content: "";
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  height: 0%;
+  width: 100%;
+  background-color: var(--green);
+  border-radius: 5rem;
+  text-align: center;
+  place-content: center;
+  transition: all linear 0.3s;
 }
 
 .header-buttons a:first-child:hover::before {
-    top: 0;
-    height: 100%;
-    content: "BOOK RANGE";
-    scale: 1.1;
+  top: 0;
+  height: 100%;
+  content: "BOOK RANGE";
+  scale: 1.1;
 }
 
 .header-buttons a:last-child:hover::before {
-    top: 0;
-    height: 100%;
-    content: "BOOK GOLF";
-    scale: 1.1;
+  top: 0;
+  height: 100%;
+  content: "BOOK GOLF";
+  scale: 1.1;
 }
 
 /*** VIDeo ***/
-.hero-video video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: fixed;
-    z-index: -1;
-    
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  background-color: black;
 }
-
 
 /*------------------------------
 ----------> Hero Section <------------
@@ -175,53 +172,52 @@ nav .header-buttons a{
 */
 
 main {
-    background-color: rgba(0, 0, 0, 0.45);
-    /* position: relative; */
-    overflow: hidden;
+  /* background-color: rgba(0, 0, 0, 0.45); */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 35%, transparent);
+  overflow: hidden;
 }
 
 .hero {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
-    z-index: 10;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  z-index: 10;
 }
 
 .hero h1 {
-    font-size: 8rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    position: relative;
-    margin-top: 3rem;
+  font-size: 8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 3rem;
 }
 
 .hero h1::before {
-    content: "EAT. DRINK. PLAY.";
-    position: absolute;
-    color: black;
-    top: -4px;
-    left: -4px;
-    z-index: -1;
-    -webkit-text-stroke: 0.1rem var(--green);
+  content: "EAT. DRINK. PLAY.";
+  position: absolute;
+  color: black;
+  top: -4px;
+  left: -4px;
+  z-index: -1;
+  -webkit-text-stroke: 0.1rem var(--green);
 }
 
 .hero h4 {
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 1.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.7rem;
 }
 
 .hero p {
-    font-size: 1.3rem;
-    width: 50%;
+  font-size: 1.3rem;
+  width: 50%;
 }
-
 
 /*------------------------------
 ----------> Carousel <------------
@@ -229,91 +225,168 @@ main {
 */
 
 .carousel {
-    position: relative;
-    z-index: 40;
-    height: 40vh;
-    text-wrap: nowrap;
-    display: flex;
-    gap: 0.5rem;
+  position: relative;
+  z-index: 40;
+  height: 40vh;
+  white-space: nowrap;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .carousel-in {
-    animation: scroll 30s linear infinite;
+  animation: scroll 30s linear infinite;
 }
 
 .carousel h1 {
-    display: inline-block;
-    font-size: 7.5rem;
-    margin-left: 1rem;
-    color: black;
-    font-weight: 900;
-    -webkit-text-stroke: 2px white;
-    font-family: Helvetica;
-    transition: all linear .3s;
+  display: inline-block;
+  font-size: 7.5rem;
+  margin-left: 1rem;
+  color: black;
+  font-weight: 900;
+  -webkit-text-stroke: 2px white;
+  font-family: Helvetica;
+  transition: all linear 0.3s;
 }
 
 .carousel h1:hover {
-    color: var(--green);
-    -webkit-text-stroke: 2px var(--green);
-
+  color: var(--green);
+  -webkit-text-stroke: 2px var(--green);
 }
 
 @keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
-
 
 /*------------------------------
 ----------> About us <------------
 --------------------------------
 */
 .about-us {
-    position: relative;
-    z-index: 40;
+  position: relative;
+  z-index: 40;
 }
 
 .about-us img {
-    width: 175px;
-    height: 175px;
-    object-fit: cover;
-    border-radius: 0.75rem;
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 0.75rem;
 }
 
 .about-us .about-container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us .about-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .about-us h2 {
-    font-size: 3rem;
-    font-weight: 900;
-    text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
 }
 
 .about-us .para-container {
-    padding: 0 4rem;
-    margin-top: 2rem;
+  padding: 0 4rem;
+  margin-top: 2rem;
 }
 
 .about-us .para-container p:nth-child(2) {
-    margin-top: 1.7rem;
+  margin-top: 1.7rem;
 }
 
-.about-us p{
-    font-size: 1.25rem;
-    line-height: 2.3rem;
+.about-us p {
+  font-size: 1.25rem;
+  line-height: 2.3rem;
+}
+
+/*------------------------------
+----------> Cards section <------------
+--------------------------------
+*/
+
+.cards-section {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 0 6rem;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.card {
+  position: relative;
+  height: 80%;
+  z-index: 40;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: end;
+  white-space: nowrap;
+}
+
+.card h1 {
+  position: absolute;
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.card1 {
+  background: linear-gradient(to top, black -100%, transparent),
+    url("../assets/images/card1.png");
+  background-size: cover;
+}
+.card2 {
+  background: linear-gradient(to top, black -100%, transparent),
+    url("../assets/images/card2.jpg");
+  background-size: cover;
+}
+.card3 {
+  background: linear-gradient(to top, black -100%, transparent),
+    url("../assets/images/card3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card .overlay {
+  background-color: var(--green);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  opacity: 0;
+  z-index: 1;
+  transition: all ease 0.5s;
+}
+
+.overlay h2 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  white-space: wrap;
+}
+
+.card:hover .overlay {
+  opacity: 1;
 }
