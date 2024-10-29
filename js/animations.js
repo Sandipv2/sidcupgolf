@@ -4,7 +4,6 @@ export default function animations() {
         height: "6rem",
         scrollTrigger: {
             trigger: "nav",
-            scroller: "body",
             start: "top -11%",
             scrub: 1
         }
@@ -14,10 +13,32 @@ export default function animations() {
         backgroundColor: "black",
         scrollTrigger : {
             trigger: "main",
-            scroller: "body",
             start: "top -25%",
             end: "top -40%",
             scrub: 1
+        }
+    })
+
+    gsap.from("#left-quote", {
+        y: -100,
+        x: -100,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#left-quote",
+            scrub: 2,
+            start: "top 50%",
+            ease: "power3.out"
+        }
+    })
+
+    gsap.from("#right-quote", {
+        y: 100,
+        x: 100,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#left-quote",
+            scrub: 2,
+            ease: "power3.out"
         }
     })
 }

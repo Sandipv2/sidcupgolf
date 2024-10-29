@@ -1,7 +1,7 @@
 export default function pointer() {
     const dotPointer = document.querySelector('.pointer-dot');
     const largePointer = document.querySelector('.pointer-large');
-    const anchors = document.querySelectorAll("a");
+    const anchors = document.querySelectorAll("a, .card");
 
     document.addEventListener("mousemove", (e) => {
         dotPointer.style.left = `${e.clientX}px`;
@@ -14,7 +14,7 @@ export default function pointer() {
 
     
     
-    // ******* Hadngling pointer scale *******
+    // ******* Handling pointer scale *******
     anchors.forEach((element) => {
         element.addEventListener('mouseenter', () => {
             dotPointer.style.width = "4rem";
