@@ -105,6 +105,15 @@ nav ul {
   text-transform: uppercase;
 }
 
+nav ul li a {
+  transition: all ease .45s;
+  font-weight: 600;
+}
+
+nav ul li:hover a{
+  color: black;
+}
+
 nav img {
   margin-left: 6rem;
 }
@@ -181,7 +190,7 @@ nav .header-buttons a {
 */
 
 main {
-  background: linear-gradient(to top, rgba(0, 0, 0, 1) 40%, transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 75%, transparent);
   overflow: hidden;
 }
 
