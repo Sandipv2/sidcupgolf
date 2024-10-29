@@ -1,4 +1,6 @@
 export default function animations() {
+    const bottomCard = document.querySelectorAll(".bottom-card");
+
     gsap.to("nav", {
         backgroundColor: "black",
         height: "6rem",
@@ -11,7 +13,7 @@ export default function animations() {
 
     gsap.to("main", {
         backgroundColor: "black",
-        scrollTrigger : {
+        scrollTrigger: {
             trigger: "main",
             start: "top -25%",
             end: "top -40%",
@@ -40,5 +42,31 @@ export default function animations() {
             scrub: 2,
             ease: "power3.out"
         }
+    })
+
+    gsap.from("#waiting-title", {
+        top: 50,
+        duration: 1,
+        delay: 1,
+        scrollTrigger: {
+            trigger: "#waiting-title",
+            scrub: 2,
+            start: "top 70%",
+            end: "top 70%"
+        }
+    })
+
+    bottomCard.forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+            gsap.to("#waiting-title", {
+                "-webkit-text-stroke-color": "var(--green)",
+            })
+        })
+        
+        card.addEventListener("mouseleave", () => {
+            gsap.to("#waiting-title", {
+                "-webkit-text-stroke-color": "white",
+            })
+        })
     })
 }

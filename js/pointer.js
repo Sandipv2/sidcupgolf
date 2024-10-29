@@ -1,7 +1,7 @@
 export default function pointer() {
     const dotPointer = document.querySelector('.pointer-dot');
     const largePointer = document.querySelector('.pointer-large');
-    const anchors = document.querySelectorAll("a, .card");
+    const anchors = document.querySelectorAll("a, .card, .bottom-card");
 
     document.addEventListener("mousemove", (e) => {
         dotPointer.style.left = `${e.clientX}px`;
