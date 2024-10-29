@@ -44,8 +44,8 @@ export default function animations() {
         }
     })
 
-    gsap.from("#waiting-title", {
-        top: 50,
+    gsap.to("#waiting-title", {
+        top: 2,
         duration: 2,
         scrollTrigger: {
             trigger: "#waiting-title",
