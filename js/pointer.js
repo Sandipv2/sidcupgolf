@@ -4,31 +4,43 @@ export default function pointer() {
     const anchors = document.querySelectorAll("a, .card, .bottom-card");
 
     document.addEventListener("mousemove", (e) => {
-        dotPointer.style.left = `${e.clientX}px`;
-        dotPointer.style.top = `${e.clientY}px`;
-        dotPointer.style.display = "block";
+        gsap.to(dotPointer, {
+            left: e.x,
+            top: e.y,
+            display: "block",
+            duration: 1,
+            ease: "power4.out"
+        })
 
-        largePointer.style.left = `${e.clientX}px`;
-        largePointer.style.top = `${e.clientY}px`;
+        gsap.to(largePointer, {
+            left: e.x,
+            top: e.y,
+            duration: 2.5,
+            ease: "power2.out"
+        })
     })
 
-    
-    
+
+
     // ******* Handling pointer scale *******
     anchors.forEach((element) => {
         element.addEventListener('mouseenter', () => {
-            dotPointer.style.width = "4rem";
-            dotPointer.style.height = "4rem";
-            dotPointer.style.border = '2px solid white';
-            dotPointer.style.backgroundColor = 'transparent';
-            
+            gsap.to(dotPointer, {
+                width: "4rem",
+                height: "4rem",
+                border: "2px solid white",
+                backgroundColor: "transparent"
+            })
+
         })
-        
+
         element.addEventListener('mouseleave', () => {
-            dotPointer.style.width = "1.2rem";
-            dotPointer.style.height = "1.2rem";
-            dotPointer.style.border = 'none';
-            dotPointer.style.backgroundColor = '#95c11e';
+            gsap.to(dotPointer, {
+                width: "1.2rem",
+                height: "1.2rem",
+                border: "none",
+                backgroundColor: "#95c11e"
+            })
 
         })
     })

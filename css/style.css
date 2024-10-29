@@ -54,7 +54,6 @@ a {
   border-radius: 50%;
   position: fixed;
   display: none;
-  transition: all ease-out 0.3s;
   z-index: 51;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -69,7 +68,6 @@ a {
   border-radius: 50%;
   background-color: var(--green);
   filter: blur(120px);
-  transition: all ease-out 0.6s;
   transform: translate(-50%, -50%);
   z-index: 9;
 }
@@ -89,7 +87,6 @@ nav {
   top: 0;
   left: 0;
   z-index: 50;
-  /* background: linear-gradient(to bottom, black, transparent 90%); */
 }
 
 nav .nav-menu-container {
@@ -566,5 +563,5 @@ main {
   font-family: poppins;
   word-spacing: 10px;
   z-index: -1;
-  transition: all ease .25s;
+  /* transition: all ease .25s; */
 }
