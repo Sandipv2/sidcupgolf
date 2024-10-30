@@ -522,6 +522,7 @@ main {
   place-content: center;
   text-align: center;
   pointer-events: none;
+  transition: 0.5s;
 }
 
 .bottom-card-overlay {
@@ -562,6 +563,7 @@ main {
   font-family: poppins;
   word-spacing: 10px;
   z-index: -1;
+  transition: 0.3s;
 }
 
 /*------------------------------
@@ -581,7 +583,7 @@ footer {
 
 footer a {
   color: black;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 footer #dots-footer {
@@ -599,7 +601,7 @@ footer #dots-footer {
   align-items: center;
 }
 
-.footer-logo{
+.footer-logo {
   width: 8rem;
 }
 
@@ -614,22 +616,22 @@ footer #dots-footer {
   line-height: 3rem;
 }
 
-.footer-menus h2:hover a{
+.footer-menus h2:hover a {
   color: white;
 }
 
-.footer-address p{
+.footer-address p {
   font-weight: 600;
   line-height: 1.5rem;
 }
 
 .footer-address h4 {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   font-weight: 900;
   font-size: 1.2rem;
 }
 
-.footer-address h4:hover a{
+.footer-address h4:hover a {
   color: white;
 }
 

@@ -1,5 +1,5 @@
 export default function animations() {
-    const bottomCard = document.querySelectorAll(".bottom-card");
+    const bottomCardContainer = document.querySelector(".bottom-card-container");
 
     gsap.to("nav", {
         backgroundColor: "black",
@@ -55,17 +55,14 @@ export default function animations() {
         }
     })
 
-    bottomCard.forEach((card) => {
-        card.addEventListener("mouseenter", () => {
-            gsap.to("#waiting-title", {
-                "-webkit-text-stroke-color": "var(--green)",
-            })
+    bottomCardContainer.addEventListener("mouseleave", () => {
+        gsap.to("#waiting-title", {
+            "-webkit-text-stroke-color": "white",
         })
-        
-        card.addEventListener("mouseleave", () => {
-            gsap.to("#waiting-title", {
-                "-webkit-text-stroke-color": "white",
-            })
+    })
+    bottomCardContainer.addEventListener("mouseenter", () => {
+        gsap.to("#waiting-title", {
+            "-webkit-text-stroke-color": "var(--green)",
         })
     })
 }
