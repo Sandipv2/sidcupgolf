@@ -1,0 +1,11 @@
+nav ul li:nth-child(3) a {
+  color: var(--green);
+}
+
+.right .image-container {
+  background-image: url("../assets/images/adventure-hero.webp");
+}
+
+.left h1::before {
+  content: "DINO CRAZY GAMES";
+}

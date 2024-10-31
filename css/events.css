@@ -1,0 +1,24 @@
+nav ul li:nth-child(5) a {
+  color: var(--green);
+}
+
+.right .image-container {
+  background-image: url("../assets/images/events-hero.webp");
+}
+
+.left h1::before {
+  content: "EVENTS";
+}
+
+.left .left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.left .cafe-timing {
+  border: 2px solid var(--green);
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+}
