@@ -3,7 +3,7 @@ nav ul li:nth-child(5) a {
 }
 
 .right .image-container {
-  background-image: url("../assets/images/events-hero.webp");
+  background-image: url("../../assets/images/events-hero.webp");
 }
 
 .left h1::before {

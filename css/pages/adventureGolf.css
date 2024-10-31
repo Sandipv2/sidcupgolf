@@ -3,7 +3,7 @@ nav ul li:nth-child(3) a {
 }
 
 .right .image-container {
-  background-image: url("../assets/images/adventure-hero.webp");
+  background-image: url("../../assets/images/adventure-hero.webp");
 }
 
 .left h1::before {
