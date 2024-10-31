@@ -1,0 +1,11 @@
+nav ul li:nth-child(2) a {
+  color: var(--green);
+}
+
+.right .image-container {
+  background-image: url('../assets/images/golf-lessons.webp');
+}
+
+.left h1::before {
+  content: "GOLF LESSONS";
+}

@@ -1,0 +1,11 @@
+nav ul li:first-child a {
+  color: var(--green);
+}
+
+.right .image-container {
+  background-image: url('../assets/images/hero-toptracer.webp');
+}
+
+.left h1::before {
+  content: "TOPTRACER RANGE";
+}
