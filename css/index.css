@@ -288,6 +288,12 @@ main {
   font-weight: 900;
 }
 
+.quote-section p span {
+  color: rgb(153, 255, 0);
+  font-family: helvetica;
+  font-weight: 600;
+}
+
 .quote-section img {
   width: 4.2rem;
   position: absolute;

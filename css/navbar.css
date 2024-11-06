@@ -18,7 +18,7 @@ nav {
 nav .nav-menu-container {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 nav ul {
@@ -47,7 +47,7 @@ nav img {
 nav .header-buttons {
   display: flex;
   gap: 0.5rem;
-  margin-right: 6rem;
+  margin-right: 3rem;
 }
 
 nav .header-buttons a {
