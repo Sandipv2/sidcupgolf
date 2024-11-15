@@ -15,6 +15,11 @@ nav {
   z-index: 50;
 }
 
+nav .nav-toggler {
+  display: none;
+  font-size: 2rem;
+}
+
 nav .nav-menu-container {
   display: flex;
   align-items: center;

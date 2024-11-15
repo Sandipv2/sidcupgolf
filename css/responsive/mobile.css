@@ -1,0 +1,214 @@
+@media (max-width: 575px) {
+  nav {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    background-color: black!important;
+    height: auto!important;
+    padding-bottom: 1rem;
+  }
+
+  nav .nav-toggler {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+  }
+
+  nav img {
+    margin-left: 1rem;
+    margin-top: 10px;
+  }
+
+  nav .nav-menu-container {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav .nav-menu-container ul {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    display: none;
+  }
+
+  nav .header-buttons {
+    display: none;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav .header-buttons a {
+    padding: 0.5rem 1rem;
+  }
+
+  /* ********************** Hero **************** */
+  .hero {
+    gap: 1.5remrem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    width: 90%;
+  }
+
+  /* ************ Text caraousel ***** */
+  .carousel h1 {
+    font-size: 4rem;
+  }
+
+  /* ********************** About section **************** */
+  .about-us .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-us p {
+    font-size: 1.5rem;
+  }
+
+  .about-us img {
+    width: 19rem;
+  }
+
+  .about-container {
+    gap: 3rem;
+  }
+
+  .about-us .para-container {
+    padding: 0 1rem;
+    margin-top: 0;
+  }
+
+  /* ********************** Cards section **************** */
+  .cards-section {
+    height: auto;
+    flex-direction: column;
+    padding: 0 2rem;
+    margin-top: 5rem;
+    gap: 2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card .overlay{
+    opacity: 1;
+    padding: 1rem 1rem;
+  }
+
+  .card .overlay h2 {
+    font-size: 1.6rem;
+  }
+
+  /* ********************** Green div **************** */
+  .green-div {
+    margin-top: 6rem;
+  }
+
+  .green-div img {
+    width: 3.5rem;
+  }
+
+  .green-div h2 {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+
+  /* ********************** Qoute **************** */
+  .quote-section {
+    height: auto;
+    margin-top: 4rem;
+
+  }
+
+  .quote-section p {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+
+  .quote-section img {
+    display: none;
+  }
+
+
+  /* ********************** Bottom cards **************** */
+  .waiting-section {
+    height: auto;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+  }
+
+  .bottom-card-container {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .bottom-card {
+    width: 85%;
+  }
+
+  .waiting-section #waiting-title {
+    display: none;
+  }
+
+
+  /* ********************** Footer **************** */
+  footer {
+    height: auto;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .footer-container .footer-menus {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .footer-menus h2 {
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .footer-logo {
+    width: 6rem;
+  }
+
+  .footer-copyright {
+    position: relative;
+    bottom: 0;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-copyright p {
+    text-align: center;
+    font-weight: 900;
+    padding: 0 1rem;
+  }
+
+}
+
+/* ********* Footer *********** */
+@media (max-width: 412px) {
+  footer {
+    overflow-x: hidden;
+  }
+}
+
+/* ********* Carousel ------- */
+@media (max-width: 412px) {
+}
