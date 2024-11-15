@@ -3,9 +3,8 @@
     flex-direction: column;
     align-items: start;
     gap: 1rem;
-    background-color: black!important;
-    height: auto!important;
-    padding-bottom: 1rem;
+    background-color: black !important;
+    height: auto !important;
   }
 
   nav .nav-toggler {
@@ -36,6 +35,7 @@
     display: none;
     width: 100%;
     justify-content: center;
+    padding: 1rem 0;
   }
 
   nav .header-buttons a {
@@ -96,7 +96,7 @@
     width: 100%;
   }
 
-  .card .overlay{
+  .card .overlay {
     opacity: 1;
     padding: 1rem 1rem;
   }
@@ -123,7 +123,6 @@
   .quote-section {
     height: auto;
     margin-top: 4rem;
-
   }
 
   .quote-section p {
@@ -135,7 +134,6 @@
     display: none;
   }
 
-
   /* ********************** Bottom cards **************** */
   .waiting-section {
     height: auto;
@@ -146,7 +144,6 @@
   .bottom-card-container {
     flex-direction: column;
     align-items: center;
-
   }
 
   .bottom-card {
@@ -156,7 +153,6 @@
   .waiting-section #waiting-title {
     display: none;
   }
-
 
   /* ********************** Footer **************** */
   footer {
@@ -200,15 +196,36 @@
     padding: 0 1rem;
   }
 
-}
+  /* /***************************** Toptracer Range page ********************* */
 
-/* ********* Footer *********** */
-@media (max-width: 412px) {
-  footer {
-    overflow-x: hidden;
+  .pages-container {
+    flex-direction: column-reverse;
+    padding: 1rem 0;
   }
-}
 
-/* ********* Carousel ------- */
-@media (max-width: 412px) {
+  .left {
+    width: 100%;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .left .left-container {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+
+  .left h1 {
+    font-size: 3rem;
+  }
+
+  .right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .right .image-container {
+    width: 90%;
+    border-radius: 1rem;
+    height: 50%;
+  }
 }
