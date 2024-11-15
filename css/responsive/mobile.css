@@ -232,4 +232,9 @@
     height: 70%;
     margin-top: 0;
   }
+
+  .contact-section {
+    justify-content: center;
+    text-align: center;
+  }
 }
