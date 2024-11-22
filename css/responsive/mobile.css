@@ -7,6 +7,10 @@
     height: auto !important;
   }
 
+  nav ul li:last-child {
+    padding-bottom: 1rem;
+  }
+
   nav .nav-toggler {
     display: block;
     position: absolute;
@@ -31,16 +35,16 @@
     display: none;
   }
 
-  nav .header-buttons {
+  /* nav .header-buttons {
     display: none;
     width: 100%;
     justify-content: center;
     padding: 1rem 0;
-  }
+  } */
 
-  nav .header-buttons a {
+  /* nav .header-buttons a {
     padding: 0.5rem 1rem;
-  }
+  } */
 
   /* ********************** Hero **************** */
   .hero {
