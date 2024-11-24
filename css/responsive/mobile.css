@@ -127,6 +127,7 @@
   .quote-section {
     height: auto;
     margin-top: 4rem;
+    padding-bottom: 3rem;
   }
 
   .quote-section p {
@@ -143,6 +144,8 @@
     height: auto;
     padding-bottom: 2rem;
     margin-top: 3rem;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .bottom-card-container {
@@ -155,7 +158,11 @@
   }
 
   .waiting-section #waiting-title {
-    display: none;
+    position: static;
+    font-size: 1.75rem;
+    text-align: center;
+    -webkit-text-stroke-color: var(--green);
+    padding: 0 1rem;
   }
 
   /* ********************** Footer **************** */
