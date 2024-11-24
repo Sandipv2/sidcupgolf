@@ -390,6 +390,7 @@ main {
   word-spacing: 10px;
   z-index: -1;
   transition: 0.3s;
+  text-align: center;
 }
 
 /*------------------------------

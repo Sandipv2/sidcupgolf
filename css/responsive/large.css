@@ -1,0 +1,107 @@
+@media (max-width: 992px) {
+  /* ****************** Navbar **************** */
+  nav {
+    justify-content: center;
+  }
+
+  nav img {
+    margin: 0;
+  }
+
+  nav ul {
+    font-size: 0.8rem;
+    gap: 1.75rem;
+  }
+
+  nav .nav-menu-container {
+    gap: 2rem;
+  }
+
+  /* ****************** Home **************** */
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  /* ****************** About **************** */
+  .about-us .para-container {
+    padding: 0 2rem;
+  }
+
+  /* ****************** Cards **************** */
+  .cards-section {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .card {
+    width: 70%;
+    height: auto;
+  }
+
+  .card .overlay {
+    padding: 2rem;
+  }
+
+  /* ****************** Waiting Section **************** */
+  .quote-section {
+    height: 100vh;
+  }
+
+  /* ****************** Waiting Section **************** */
+  .waiting-section {
+  }
+
+  .waiting-section #waiting-title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .bottom-card h1 {
+    font-size: 2rem;
+  }
+
+  /* ****************** Footer **************** */
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  footer #dots-footer {
+    left: 0;
+    padding: 1rem 0;
+  }
+
+  .footer-container {
+    padding: 3rem;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .footer-container .footer-menus {
+    gap: 1.5rem;
+  }
+
+  .footer-menus h2 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .footer-copyright {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  /* ****************** Pages **************** */
+  .left h1 {
+    font-size: 3rem;
+  }
+
+  .contact-section {
+    gap: 1rem;
+    text-align: center;
+  }
+}
