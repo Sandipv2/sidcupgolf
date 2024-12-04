@@ -17,8 +17,74 @@ nav ul li:nth-child(5) a {
   gap: 1.5rem;
 }
 
-.left .cafe-timing {
+.left .book-now-btn {
   border: 2px solid var(--green);
   border-radius: 2rem;
   padding: 1rem 2rem;
+}
+
+
+/* ***************** Book Now Section *************** */
+.book-now-section {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.book-now-section .book-now-container {
+  position: relative;
+  background-color: whitesmoke;
+  width: 30%;
+  border-radius: 0.7rem;
+  padding: 2rem;
+  color: black;
+}
+
+.book-now-container h2 {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.book-close-icon {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--green);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #28a745;
 }

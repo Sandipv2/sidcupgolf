@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/pages.css" />
     <link rel="stylesheet" href="../css/pages/events.css" />
-    <link rel="stylesheet" href="../css/responsive/responsive.css">
+    <link rel="stylesheet" href="../css/responsive/responsive.css" />
     <link
       rel="shortcut icon"
       href="../assets/images/site-icon.png"
@@ -68,14 +68,13 @@
           <h1>EVENTS</h1>
           <div>
             <p>
-                Compete against other range goers in various game types on our Toptracer range.
-                Keep an eye out on our socials, website and on the range for upcoming competitions.
+              Compete against other range goers in various game types on our
+              Toptracer range. Keep an eye out on our socials, website and on
+              the range for upcoming competitions.
             </p>
           </div>
 
-          <a href="#" class="cafe-timing">
-            BOOK A BAY
-          </a>
+          <a href="#" class="book-now-btn"> BOOK A BAY </a>
         </div>
       </div>
 
@@ -84,6 +83,48 @@
       </div>
     </section>
 
+    <div class="book-now-section">
+      <div class="book-now-container">
+        <span class="book-close-icon">X</span> 
+        <h2>Book a Bay</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" required />
+          </div>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="form-group">
+            <label for="time-slot">Time Slot</label>
+            <select id="time-slot" name="time-slot" required>
+              <option value="" disabled selected>Select a time slot</option>
+              <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+              <option value="afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
+              <option value="evening">Evening (5:00 PM - 8:00 PM)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="players">Number of Players</label>
+            <input
+              type="number"
+              id="players"
+              name="players"
+              min="1"
+              max="10"
+              required
+            />
+          </div>
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -91,5 +132,20 @@
       referrerpolicy="no-referrer"
     ></script>
     <script type="module" src="../js/main.js"></script>
+    <script>
+      const bookNowBtn = document.querySelector(".book-now-btn");
+      const closeBtn = document.querySelector(".book-close-icon");
+      const bookNowSection = document.querySelector(".book-now-section");
+
+      bookNowBtn.addEventListener("click", () => {
+        bookNowSection.style.display = 'flex';
+      })
+      
+      closeBtn.addEventListener("click", () => {
+        bookNowSection.style.display = 'none';
+        
+      })
+      
+    </script>
   </body>
 </html>
