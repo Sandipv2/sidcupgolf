@@ -1,0 +1,50 @@
+@media (max-width: 1200px) {
+    /* *********** Navbar of contact page ********** */
+    .contact-nav {
+        background-color: black;
+    }
+
+    /* *********** Home ********** */
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    /* *********** Card ********** */
+    .card h1 {
+        font-size: 1.5rem;
+    }
+
+    /* *********** Waiting Section ********** */
+    .waiting-section #waiting-title {
+        font-size: 3.7rem;
+    }
+    
+    /* *********** Footer ********** */
+    .footer-menus h2 {
+        font-size: 1rem;
+    }
+
+
+    /* ************ Pages ************** */
+    .left h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    /* *********** Navbar of contact page ********** */
+    .contact-nav {
+        background-color: black;
+    }
+
+    /* *********** Home ********** */
+    .waiting-section #waiting-title {
+        font-size: 4rem;
+    }
+
+    /* ************ Pages ************** */
+    .left h1 {
+        font-size: 3.5rem;
+    }
+    
+}
