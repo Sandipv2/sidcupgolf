@@ -1,5 +1,5 @@
 nav {
-  background-color: transparent !important;
+  background-color: black;
 }
 
 /* ****************************************** */
@@ -61,7 +61,8 @@ nav {
 
 .right .image-container {
   margin-top: 5rem;
-  height: 78%;
+  /* height: 78%; */
+  height: 70%;
   width: 93%;
   background-position: center;
   background-size: cover;

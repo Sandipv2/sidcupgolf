@@ -2,6 +2,10 @@ nav ul li:nth-child(6) a {
   color: var(--green);
 }
 
+.contact-nav {
+  background-color: black;
+}
+
 .pages-container * {
     position: relative;
     z-index: 40;

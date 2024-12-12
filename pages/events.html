@@ -6,6 +6,7 @@
     <title>Sidcup Family Golf</title>
     <link rel="stylesheet" href="../css/globals.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="../css/pages.css" />
     <link rel="stylesheet" href="../css/pages/events.css" />
     <link rel="stylesheet" href="../css/responsive/responsive.css" />
@@ -85,7 +86,7 @@
 
     <div class="book-now-section">
       <div class="book-now-container">
-        <span class="book-close-icon">X</span> 
+        <span class="book-close-icon">X</span>
         <h2>Book a Bay</h2>
         <form>
           <div class="form-group">
@@ -125,6 +126,53 @@
       </div>
     </div>
 
+    <footer>
+      <img src="../assets/images/dots-footer.svg" id="dots-footer" />
+      <div class="footer-container">
+        <a href="#" class="footer-logo">
+          <img src="../assets/images/logo.svg" alt="logo" />
+        </a>
+
+        <div class="footer-menus">
+          <div>
+            <h2><a href="topTracer.html">TOPRACER RANGE</a></h2>
+            <h2><a href="adventureGolf.html">ADVENTURE GOLF</a></h2>
+            <h2><a href="cafe.html">CAFÉ</a></h2>
+          </div>
+
+          <div>
+            <h2><a href="events.html">EVENTS</a></h2>
+            <h2><a href="golfLessons.html">GOLF LESSONS</a></h2>
+            <h2><a href="contact.html">CONTACT US</a></h2>
+          </div>
+        </div>
+
+        <div class="footer-address">
+          <p>
+            A20, SIDCUP BYPASS <br />
+            CHISLEHURST <br />
+            KENT <br />
+            BR7 6RP <br />
+          </p>
+          <p>TEL: <b>0201 903 0524</b></p>
+          <!-- <h4><a href="#">GET DIRECTIONS</a></h4> -->
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>
+          Copyright © 2023 Adventure Leisure Ltd. All rights reserved. |
+          <a href="privacyPolicy.html">Privacy Policy</a>
+          | Terms And Conditions | Gender Pay Gap
+        </p>
+        <p>
+          <a href="https://github.com/sandipv2/" target="_blank"
+            >Made with ❤️ by sandipv2</a
+          >
+        </p>
+      </div>
+    </footer>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -138,14 +186,12 @@
       const bookNowSection = document.querySelector(".book-now-section");
 
       bookNowBtn.addEventListener("click", () => {
-        bookNowSection.style.display = 'flex';
-      })
-      
+        bookNowSection.style.display = "flex";
+      });
+
       closeBtn.addEventListener("click", () => {
-        bookNowSection.style.display = 'none';
-        
-      })
-      
+        bookNowSection.style.display = "none";
+      });
     </script>
   </body>
 </html>
